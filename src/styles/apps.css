@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font: inherit;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+}
+
+img,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+:root {
+    --text-xs: .75rem;
+    --text-sm: .875rem;
+    --text-md: 1rem;
+    --text-lg: 1.25rem;
+    --text-xl: 1.5rem;
+    --text-xxl: 2rem;
+    --text-3xl: 2.5rem;
+    --text-4xl: 3rem;
+    --text-5xl: 3.5rem;
+
+
+    --color-beige: #e8d4bc;
+    --color-light-brown: #cfa67e;
+    --color-brown: #6e4634;
+    --color-grey: #4a4a4a;
+    --color-light-grey: #4a4a4a;
+    --color-dark-grey: #333333;
+    --color-dark-brown: #604c38;
+
+}
+
+
+body {
+    background-color: var(--color-beige);
+    font-family: 'Roboto', sans-serif, Arial !important;
+}
+
+p {
+    color: var(--color-light-grey)
+}
+
+
+*:focus {
+    /* outline: 1px solid #6e463477; */
+}

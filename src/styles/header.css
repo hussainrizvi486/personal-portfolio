@@ -1,0 +1,112 @@
+.app-header__content {
+    padding-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-dark-grey);
+}
+
+.app-header__content h1 {
+    font-size: var(--text-xxl);
+    font-weight: 700;
+}
+
+
+
+.app-header__content h2 {
+    margin-top: .5rem;
+    font-size: var(--text-lg);
+    font-weight: 700;
+}
+
+.app-header__content p {
+    margin-top: .5rem;
+    max-width: 20rem;
+}
+
+.app-header__nav-container {
+    display: none;
+}
+
+
+.app-header__social-navbar {
+    margin-top: 2rem;
+    display: flex;
+    gap: .8rem;
+}
+
+
+.social-navbar__item svg {
+    --size: 1.5rem;
+    height: var(--size);
+    width: var(--size);
+    color: var(--color-dark-grey);
+    transition: transform 200ms;
+
+}
+
+@media (min-width: 1024px) {
+    .app-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .app-header__content {
+        padding: 0;
+    }
+
+    .app-header__content h1 {
+        font-size: var(--text-4xl);
+    }
+
+    .app-header__content h2 {
+        font-size: var(--text-xl);
+        font-weight: 600;
+    }
+
+
+    .app-header__nav-container {
+        display: block;
+        margin-top: 3rem;
+    }
+
+    .app-header__nav-container nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-element {
+        margin-bottom: .55rem;
+        font-size: var(--text-sm);
+        display: flex;
+        align-items: center;
+        color: #646464;
+        cursor: pointer;
+        font-family: "Poppins";
+    }
+
+    .nav-line-effect {
+        width: 2rem;
+        height: 1px;
+        margin-right: 1rem;
+        background: currentColor;
+        transition: 200ms all;
+
+    }
+
+    .nav-element:hover {
+        color: #333333;
+        font-weight: 600;
+    }
+
+    .nav-element:hover .nav-line-effect {
+        width: 4rem;
+    }
+
+    .social-navbar__item svg:hover {
+        transform: translateY(-6px);
+        /* color: var(--color-light-grey); */
+        color: #6e4634;
+
+    }
+}
